@@ -68,7 +68,7 @@ body {
     background-color: #292e47;
   }
   
-  .hero-section {
+  .hero {
     padding-top: 100px;
   }
   
@@ -181,6 +181,13 @@ body {
   }
   
   .projects-heading {
+    color: #292e47;
+    font-size: 40px;
+    line-height: 36px;
+    margin-top: 20px;
+  }
+  
+  .services-heading {
     color: #292e47;
     font-size: 40px;
     line-height: 36px;
@@ -395,7 +402,7 @@ body {
     background-repeat: no-repeat;
   }
   
-  .suscribe-section {
+  .subscribe-section {
     width: 1320px;
     height: 500px;
     max-width: 1320px;
@@ -404,9 +411,10 @@ body {
     margin-left: auto;
     background-color: #ffc600;
     padding: 0px 30px;
+    align-items: center;
   }
   
-  .suscribe-form {
+  .subscribe-form {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -417,7 +425,7 @@ body {
     margin-left: auto;
   }
   
-  .suscribe-heading {
+  .subscribe-heading {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #292e47;
@@ -425,7 +433,7 @@ body {
     line-height: 44px;
   }
   
-  .suscribe-subtitle {
+  .subscribe-subtitle {
     font-size: 17px;
     color: #6b708d;
   }
@@ -557,6 +565,15 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
   }
+
+  .services-heading {
+    color: #292e47;
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
   
   .services-grid {
     display: grid;
@@ -627,3 +644,404 @@ body {
   .service-icon.icon-3 {
     background-image: url(project-assets/services-section/icons/3.svg);
   }
+
+  /* responsive design */
+
+  @media screen and (max-width: 991px) {
+    .container.navbar {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .container.hero-container {
+        flex-direction: column;
+    }
+
+    .container.contact-container {
+        margin-top: 0px;
+    }
+
+    .navbar-2.contact {
+        margin-top: 0px;
+    }
+
+    .button.principal-btn {
+        display: none;
+    }
+
+    .button.principal-btn.hero {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .button.principal-btn.cta-button {
+        display: block;
+    }
+
+    .button.principal-btn.contact {
+        display: block;
+    }
+
+    .section.hero {
+        padding-top: 0px;
+    }
+
+    .section.projects {
+        margin-top: 40px;
+    }
+
+    .section.services {
+        margin-top: 40px;
+    }
+
+    .section.cta-section {
+        display: flex;
+        max-width: 100%;
+        margin-top: 60px;
+        flex-direction: row;
+    }
+
+    .section.footer {
+        margin-top: 60px;
+    }
+
+    .section.project {
+        margin-top: 0px;
+    }
+
+    .hero-content {
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .heading-2.hero-heading {
+        text-align: center;
+    }
+
+    .text-block.hero-description {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .enterprises-logos {
+        justify-items: center;
+        align-items: center;
+        grid-column-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .client-logo.amazon {
+        display: none;
+    }
+
+    .testimonial-heading {
+        max-width: 400px;
+        margin-bottom: 0px;
+        line-height: 150%;
+    }
+
+    .subscribe-heading {
+      max-width: 400px;
+      margin-bottom: 0px;
+      line-height: 150%;
+      align-items: center;
+    }
+
+    .emoji.top-left {
+        width: 100px;
+        height: 100px;
+    }
+
+    .emoji.top-right {
+        width: 100px;
+        height: 100px;
+    }
+
+    .emoji.bottom-left {
+        width: 100px;
+        height: 100px;
+    }
+
+    .emoji.bottom-right {
+        width: 100px;
+        height: 100px;
+    }
+
+    .collection-list {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .menu-button {
+        display: block;
+        color: #292e47;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container.logos {
+        margin-top: 40px;
+    }
+
+    .container.testimonial {
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .container.subscribe {
+      height: 100%;
+      justify-content: space-around;
+    }
+
+    .container.container-cta {
+        max-width: 100%;
+    }
+
+    .container.footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button.principal-btn.cta-button {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .section.testimonial {
+        height: 450px;
+    }
+
+    .section.subscribe {
+      height: 450px;
+    }
+
+    .section.cta-section {
+        width: 100%;
+    }
+
+    .heading-2.hero-heading {
+        font-size: 40px;
+    }
+
+    .text-block.hero-description {
+        font-size: 17px;
+    }
+
+    .hero-card-1 {
+        display: none;
+    }
+
+    .hero-card-2 {
+        display: none;
+    }
+
+    .projects-heading {
+        text-align: center;
+    }
+
+    .services-heading {
+      text-align: center;
+    }
+
+    .subscribe-heading {
+      text-align: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .emoji-bottom-left {
+        display: none;
+    }
+
+    .emoji-bottom-right {
+        display: none;
+    }
+
+    .emoji-top-left {
+        display: none;
+    }
+
+    .emoji-top-right {
+        display: none;
+    }
+
+    .services-grid {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+
+    .service-icon.icon-1 {
+        flex: 0 0 auto;
+    }
+
+    .service-icon.icon-2 {
+        flex: 0 0 auto;
+    }
+
+    .service-icon.icon-3 {
+        flex: 0 0 auto;
+    }
+
+    .cta-heading {
+        font-size: 30px;
+    }
+
+    .cta-form {
+        flex-direction: column;
+    }
+
+    .form-block {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+    }
+
+    .footer-content-address {
+        text-align: center;
+    }
+
+    .collection-list {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .collection-list-wrapper {
+        margin-top: 20px;
+    }
+
+    .project-page-title {
+        font-size: 40px;
+    }
+
+    .project-type-wrapper {
+        flex-direction: column;
+    }
+
+    .project-page-type {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .project-image-wrapper {
+        margin-top: 40px;
+    }
+
+    .contact-heading {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .contact-form-wrapper {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .collection-item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .principal-btn.hero {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .heading-hero.hero-title {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .hero-button-1 {
+        text-align: center;
+    }
+
+    .enterprises-logos {
+        width: 100%;
+        max-width: 100%;
+        grid-auto-flow: row;
+        grid-column-gap: 20px;
+    }
+
+    .client-logo {
+        width: 120px;
+    }
+
+    .projects-heading {
+        font-size: 30px;
+    }
+
+    .services-heading {
+      font-size: 30px;
+    }
+
+    .subscribe-heading {
+      font-size: 30px;
+      align-items: center;
+    }
+
+    .testimonial-heading {
+        font-size: 30px;
+    }
+
+    .text-field {
+        width: 100%;
+    }
+
+    .form-block {
+        max-width: 100%;
+    }
+
+    .contact-form-wrapper {
+        grid-auto-columns: 1fr;
+    }
+
+    .contact-text-wrapper {
+        max-width: 100%;
+    }
+}
